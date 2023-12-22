@@ -1,0 +1,26 @@
+﻿<Window x:Class="Gilmetdinova_eyes_save.PriorWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Gilmetdinova_eyes_save"
+        mc:Ignorable="d"
+        Title="Изменить приоритет" Height="150" Width="220" FontFamily="Century Gothic" WindowStyle="None">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Введите приоритет агента" FontSize="15" VerticalAlignment="Center" Margin="10"/>
+        <StackPanel Grid.Row="1" VerticalAlignment="Center" Orientation="Horizontal">
+            <TextBlock Text="Приоритет" Margin="10" FontSize="15" />
+            <TextBox Margin="10" Width="106"  Name="PriorityBox"></TextBox>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Orientation="Horizontal" VerticalAlignment="Center">
+            <Button  Margin="5" Height="25" Width="100" Content="Сохранить" Name="SaveBT" Click="SaveBT_Click" FontSize="15"></Button>
+            <Button Margin="5 " Content="Изменить" Width="100" Height="25" FontSize="15" Name="CloseBT" Click="CloseBT_Click"></Button>
+        </StackPanel>
+        <Frame Grid.Row="1" Name="MainFrame" NavigationUIVisibility="Hidden"></Frame>
+    </Grid>
+</Window>
